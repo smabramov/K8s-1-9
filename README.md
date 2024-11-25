@@ -46,6 +46,9 @@ Certificate request self-signature ok
 subject=CN = netology, O = group2
 
 ```
+[netology.crt](https://github.com/smabramov/K8s-1-9/blob/3218cf4a55fa8af8a9905ea21f1d73e1098c7767/cert/netology.crt)
+[netology.key](https://github.com/smabramov/K8s-1-9/blob/3218cf4a55fa8af8a9905ea21f1d73e1098c7767/cert/netology.key)
+
 Настроим конфигурационный фаил:
 
 ```
@@ -85,13 +88,13 @@ users:
     client-certificate: cert/netology.crt
     client-key: cert/netology.key
 
-    ```
+```
 
 Создал роли и все необходимые настройки для пользователя:
 
-[role.yaml]()
+[role.yaml](https://github.com/smabramov/K8s-1-9/blob/3218cf4a55fa8af8a9905ea21f1d73e1098c7767/code/role.yaml)
 
-[role-binding.yaml]()
+[role-binding.yaml](https://github.com/smabramov/K8s-1-9/blob/3218cf4a55fa8af8a9905ea21f1d73e1098c7767/code/role-binding.yaml)
 
 ```
 serg@k8snode:~/git/K8s-1-9/code$ kubectl apply -f role.yaml
@@ -125,9 +128,11 @@ rules:
   - watch
   - list
 
-  ```
+```
 
   Запустим на кластере pod.
+
+[test_multitool.yaml](https://github.com/smabramov/K8s-1-9/blob/3218cf4a55fa8af8a9905ea21f1d73e1098c7767/code/test_multitool.yaml)  
 
 ```
 serg@k8snode:~/git/K8s-1-9/code$ kubectl apply -f test_multitool.yaml 
