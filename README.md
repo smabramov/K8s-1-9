@@ -47,6 +47,7 @@ subject=CN = netology, O = group2
 
 ```
 [netology.crt](https://github.com/smabramov/K8s-1-9/blob/3218cf4a55fa8af8a9905ea21f1d73e1098c7767/cert/netology.crt)
+
 [netology.key](https://github.com/smabramov/K8s-1-9/blob/3218cf4a55fa8af8a9905ea21f1d73e1098c7767/cert/netology.key)
 
 Настроим конфигурационный фаил:
